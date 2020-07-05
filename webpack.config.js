@@ -21,7 +21,7 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.tsx?$/,
+        test: /\.ts(x?)$/,
         use: 'ts-loader',
         exclude: /node_modules/,
       },
