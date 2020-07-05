@@ -16,14 +16,13 @@ module.exports = {
     filename: "./index.js",
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(js|ts)x?$/,
-        loader: require.resolve("babel-loader"),
+        test: /\.tsx?$/,
+        use: 'ts-loader',
         exclude: /node_modules/,
       },
     ],
